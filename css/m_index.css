@@ -1,14 +1,248 @@
+@font-face {
+  font-family: 'Arapey';
+  src: url('./../fonts/Arapey-Regular.woff2') format('woff2'),
+      url('./../fonts/Arapey-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosanskr/v13/PbykFmXiEBPT4ITbgNA5Cgm203Tq4JJWq209pU0DPdWuqxJFA4GNDCBYtw.0.woff2)
+    format("woff2");
+}
+
 @media (max-width: 768px) {
   .pc_all {
     display: none;
   }
 
+  .mob_all {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 
+  header {
+    height: 800px;
+  }
 
+  .m_top_header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
 
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
 
+  }
 
+  /* 로고 가운데 정렬 */
+  #m_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+  }
 
+  #m_hamburger i {
+    position: relative;
+    float: left;
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+
+ .m_icon_row {
+  position: relative;
+  float: left;
+  width: 90px;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+ }
+
+  .icon_row > a {
+    margin-right: 10px;
+  }
+
+  .icon_row > a:last-child {
+    margin-right: 0px;
+  }
+
+    .bi-search, .bi-instagram {
+      font-size: 1.3rem;
+      color: #ffffff;
+    }
+
+    .bi-person {
+      font-size: 1.6rem;
+      color: #ffffff;
+
+    }
+
+    .bi-bag {
+      font-size: 1.4rem;
+      color: #ffffff;
+    }
+
+  #m_main_img {
+    width: 100%;
+    z-index: 1;
+  }
+
+    #m_main_img img {
+      display: block;
+      position: absolute;  
+      top: 0;
+      left: 0;
+      overflow: hidden;
+    }
+
+#m_text_box_1 {
+  position: relative;
+  clear: both;
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+  #m_text_box_1 p {
+    display: block;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.68em;
+    color: #707070;
+    line-height: 180%;
+  }
+
+.m_blank {
+  position: relative;
+  clear: both;
+  width: 100%;
+  height: 80px;
+}
+
+.m_product_box_1 {
+  position: relative;
+  clear: both;
+  width: 100%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+  .m_product_box > a > img {
+    display: block;
+    max-width: 100%; /* 가로세로 비율 고정*/
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden; /* 모서리 둥글게하고 넘친 부분 가리기 */
+    border: solid 1px #707070;
+  }
+
+  .m_product_name {
+    margin-top: 10px
+  }
+
+  .m_product_name span {
+    width: 100%;
+    height: 30px;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    color: #262626;
+    font-weight: 400;
+  }
+
+  .m_product_price {
+    margin-top: 5px;
+  }
+
+  .m_product_price span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    color: #da7337;
+
+    font-weight: 500;
+  }
+  .m_product_price_discount del {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    color: #262626;
+    font-weight: 400;
+  }
+  
+.m_blank_2 {
+  position: relative;
+  clear: both;
+  width: 100%;
+  height: 40px;
+}
+
+.m_text_box_2 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+  .m_text_box_2 span {
+    display: block;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.6em;
+    color: #707070;
+    margin-bottom: 8px;
+  }
+
+.m_middle_box {
+  width: 90%;
+  margin: 0 auto;
+}
+
+  .m_middle_box img:first-child {
+    margin-bottom: 25px;
+  }
+
+.m_text_box_3 p {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.7em;
+  color: #707070;
+  margin-top: 20px;
+  line-height: 190%;
+}
+
+.m_bottom_box {
+  position: relative;
+  clear: both;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+  .m_bottom_box p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.7em;
+    color: #707070;
+    margin-top: 20px;
+    line-height: 190%;
+  }
 
 
 

@@ -16,12 +16,16 @@
     format("woff2");
 }
 
+.mob_all {
+  display: none;
+}
+
 .box_top_1 {
   position: relative;
   clear: both;
   width: 100%;
   height: 1000px;
-  background-color: blue;
+  /* background-color: blue; */
   top: 0;
   left: 0;
 }
@@ -34,19 +38,19 @@
   margin: 0 auto;
   padding: 20px 70px 20px 70px;
   z-index: 9999;
+  transition: all 0.2s; /*스크롤 효과*/
 
 
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
-
-  /* background-color: pink; */
 }
 
 .top_header.active {
   background: transparent;
   background-color: #fff;
+  transition: all 0.2s;
   border-bottom: solid 1px #70707070;
 }
 
@@ -118,7 +122,7 @@
   .icon_row > a:last-child {
     margin-right: 0px;
   }
-  
+
     .bi-search, .bi-instagram {
       font-size: 1rem;
       color: #ffffff;
@@ -210,6 +214,7 @@
       height: 100%;
       border-radius: 15px;
       overflow: hidden; /* 모서리 둥글게하고 넘친 부분 가리기 */
+      border: solid 1px #70707090;
     }
 
     .product_box_each > a {
