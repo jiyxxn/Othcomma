@@ -139,7 +139,12 @@
       color: #ffffff;
     }
 
+/* 메뉴 호버 효과 */
 
+.menu_bar a:hover, .icon_row i:hover {
+  color: #ffffff94;
+  transition: all 0.3s;
+}
 
 
 .pc_main_img {
