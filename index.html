@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/m_index.css">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,250 +22,263 @@
 
 
 </head>
-<body>
-  
-<div class="box_top_1">
-  <header>
-    <div class="top_header">
-      <div id="pc_logo">
+  <div class="pc_all">    
+    <div class="box_top_1">
+      <header>
+        <div class="top_header">
+          <div id="pc_logo">
+            <a href="#">
+              <img src="./images/logo.png" alt="오티에이치컴마">
+            </a>
+          </div>
+          <div class="blank_1">&nbsp;</div>
+
+          <ul class="menu_bar">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Others</a></li>
+            <li><a href="#">QnA</a></li>
+            <li><a href="#">Notice</a></li>
+          </ul>
+          <div class="blank_2">&nbsp;</div>
+
+          <ul class="icon_row">
+            <a href="#">        
+              <i class="bi bi-search"></i> <!--검색 아이콘-->
+            </a>
+            <a href="#">        
+              <i class="bi bi-person"></i> <!--마이페이지 아이콘-->
+            </a>
+            <a href="#">        
+              <i class="bi bi-cart3"></i> <!--장바구니 아이콘-->
+            </a>
+            <a href="#">        
+              <i class="bi bi-instagram"></i> <!--인스타그램 아이콘-->
+            </a>
+          </ul>
+        </div>
+        <!-- 메뉴바 스크롤 효과 -->
+        <script>
+          const menu = document.querySelector('.top_header');
+          const menuHeight = menu.getBoundingClientRect().height;
+
+          document.addEventListener('scroll', () => {
+          if (window.scrollY > menuHeight) {
+            menu.classList.add('active');
+        } else {
+          menu.classList.remove('active');
+        }
+        });
+        </script>
+      </header>
+
+      <div class="pc_main_img" style="background-image:url(./images/main_img.jpg); width:100%; height:100%;">&nbsp;
+      </div>
+    </div>
+
+    <div class="blank_3">&nbsp;</div>
+
+
+    <div id="text_box_1">
+      <span>Oth, creates stories by putting inspirations from travel and daily life together, and develops the brand as if the stories may invite to an indirect experience of an exhibition.</span>
+      
+      <span>Oth, produces the products which stimulate five senses; vision, smell, touch, hearing and taste that are based on the photos taken by the director to make various stories to perform coexistance in your spaces,</span>
+
+      <span>and proposes the ways that images and emotions to exist in multi-dimensional forms, not in the form of pictures.</span>
+
+      <span>Pphotography ⓒ 2020 Othcomma</span>
+    </div>
+
+    <div class="blank_3">&nbsp;</div>
+
+    <!-- 상품 row -->
+    <div class="product_box_all">
+      <div class="product_box_row">
+        <div class="product_box_each">
+          <a href="#">
+          <img src="./images/product_1.jpg" alt=""> 
+          </a>
+          <div class="hide_text">
+            <a href="#">인센스 스타터팩</a>
+          </div>
+        </div>
+        <div class="product_box_each">
+          <a href="#">
+          <img src="./images/product_2.jpg" alt=""> 
+          </a>
+          <div class="hide_text">
+            <a href="#">젊은 날의 바다</a>
+          </div>
+        </div>
+        <div class="product_box_each">
+          <a href="#">
+          <img src="./images/product_3.jpg" alt=""> 
+          </a>
+          <div class="hide_text">
+            <a href="#">#4. 나른한 프라하의 카페</a>
+          </div>
+        </div>
+        <div class="product_box_each">
+          <a href="#">
+          <img src="./images/product_4.jpg" alt=""> 
+          </a>
+          <div class="hide_text">
+            <a href="#">#3. 찬란한 니스 해변</a>
+          </div>
+        </div>
+        <div class="product_box_each">
+          <a href="#">
+          <img src="./images/product_5.jpg" alt=""> 
+          </a>
+          <div class="hide_text">
+            <a href="#">#2. 베르사유 정원에서 피크닉</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product_box_row">
+        <div class="product_box_each">
+          <a href="#">
+          <img src="./images/product_6.jpg" alt=""> 
+          </a>
+          <div class="hide_text">
+            <a href="#">THE COMPANION</a>
+          </div>
+        </div>
+        <div class="product_box_each">
+          <a href="#">
+          <img src="./images/product_7.jpg" alt=""> 
+          </a>
+          <div class="hide_text">
+          <a href="#">Han River</a>
+          </div>
+        </div>
+        <div class="product_box_each">
+          <a href="#">
+          <img src="./images/product_8.jpg" alt=""> 
+          </a>
+          <div class="hide_text">
+          <a href="#">Switzerland</a> 
+          </div>
+        </div>
+        <div class="product_box_each">
+          <a href="#">
+          <img src="./images/product_9.jpg" alt=""> 
+          </a>
+          <div class="hide_text">
+            <a href="#">Sunset</a>
+          </div>
+        </div>
+        <div class="product_box_each">
+          <a href="#">
+          <img src="./images/product_10.jpg" alt=""> 
+          </a>
+          <div class="hide_text">
+            <a href="#">Han River Upcycling Bag</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="blank_3">&nbsp;</div>
+    <div class="blank_3">&nbsp;</div>
+
+    <div class="text_box_2">
+      <span>1. HanRiver fabric poster ver.1,2 </span>
+      <span>2. Switzerland fabric poster</span>
+      <span>3. Incense Stick #1.Switzerland in the rain</span>
+      <span>4. Sunset fabric poste</span>
+    </div>
+
+    <div class="blank_3">&nbsp;</div>
+
+    <div class="middle_product_box">
+      <div class="middle_product_box_left">
+        <img src="./images/middle_img.jpg" alt="">
+      </div>
+      <div class="middle_product_box_blank">&nbsp;</div>
+      <div class="middle_product_box_right">
+        <img src="./images/water.jpg" alt="">
+        <p>때때로 훌훌 마음을 털어놓고 싶은 장소가 서울에 있습니다. 바쁜 삶 속에서 하루의 고단함을 잊게 해주는 풍경. 살랑이는 바람과 따뜻한 날씨. 바로 그곳엔 위로가 있습니다. 오티에이치콤마는 직접적인 언어로 질문을 던지는 대신 패브릭 속에 한강의 윤슬을 담아 여러분께 묻습니다. 한강은 당신에게 어떤 의미로 다가가며 또 당신은 이곳에서 무엇을 말하고 싶은지를요.</p>
+      </div>
+    </div>
+
+    <div class="blank_3">&nbsp;</div>
+    <div class="blank_3">&nbsp;</div>
+    <div class="blank_3">&nbsp;</div>
+
+    <div class="product_box_2_all">
+      <div class="product_box_1">
         <a href="#">
-          <img src="./images/logo.png" alt="오티에이치컴마">
+        <img src="./images/product_11.jpg" alt="">
         </a>
+        <p>
+          “더 열심히 놀고, 더 열심히 넓은 세상을 보러 다니렴. 아빠는 살면서 가장 후회되는게 어릴때부터 장사를 시장하고 빨리 결혼해서 가장이 되니 짊어지고 갈 것이 너무 많았기 때문에 더이상 나혼자만 생각할 수 없게 되었어. 내가 하고 싶은 것을 포기해야만 우리 가족이 살 수 있었거든. 그래서 내 자식들은, 너희들은 한 살이라도 더 젊을 때 더 많은 것을 보고 더 넓은 세상을 경험했으면 좋겠어.” 라고 아빠가 말했다.
+        </p>
       </div>
-      <div class="blank_1">&nbsp;</div>
 
-      <ul class="menu_bar">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Others</a></li>
-        <li><a href="#">QnA</a></li>
-        <li><a href="#">Notice</a></li>
-      </ul>
-      <div class="blank_2">&nbsp;</div>
-
-      <ul class="icon_row">
-        <a href="#">        
-          <i class="bi bi-search"></i> <!--검색 아이콘-->
+      <div class="product_box_1">
+        <a href="#">
+          <img src="./images/product_12.jpg" alt="">
         </a>
-        <a href="#">        
-          <i class="bi bi-person"></i> <!--마이페이지 아이콘-->
+        <p>
+          이탈리아를 떠나 스위스에 도착한 첫째 날, 처음부터 꼬일 때로 꼬인 날이었다. 로마 역에서 사기를 당해 기차를 놓치고 서둘러 달려간 공항에는 예약에 문제가 생겨 하필 비행기 탑승 10분 전에, 목적지까지 걸어서 20분이나 소요되는 거리를 15kg의 배낭을 메고 5분 안으로 뛰어서 도착해야만 했으며, 스위스에 도착해 숨 좀 돌릴 겸 몽퇴르에서 산책을 하다가 갑자기 쏟아진 소나기에 물에 빠진 생쥐 꼴이 되기도 하고 마지막으로 숙소로 향하는 기차를 잘 못 타기까지 했다. 안 좋은 일들은 왜 이렇게 한꺼번에 몰려오는지, 잔뜩 심통이 난 얼굴로 오늘이 내 인생 최악의 날이라고 생각을 하면서 환승하기 위해 스피치 역에서 내려 기차를 기다리다고 있었는데, 바로 역 앞에 있는 바다처럼 넓은 호수에 그림처럼 선명하게 뜬 무지개 하나가 잔뜩 지친 나에게 큰 위로로 다가왔다. 이 무지개를 만나기 위해 이제까지 그런 역경을 이겨낸 걸까. 행복이란 참 이렇게 단순하다. 내게는 가질 수도 없고, 굶주린 배를 채우지도 못하는 그 무지개가 고단한 하루 끝에 받은 귀중한 선물같았다. 
+        </p>
+      </div>
+
+      <div class="product_box_1">
+        <a href="#">
+          <img src="./images/product_13.jpg" alt="">
         </a>
-        <a href="#">        
-          <i class="bi bi-cart3"></i> <!--장바구니 아이콘-->
-        </a>
-        <a href="#">        
-          <i class="bi bi-instagram"></i> <!--인스타그램 아이콘-->
-        </a>
-      </ul>
-    </div>
-  </header>
+        <p>
+          약 530프랑을 지불하고 타고 올라온 케이블카에서 내린 뒤 건물을 벗어나니 눈 앞에 펼쳐진 풍경들도 그렇고, 지금 여기서 숨쉬고 있는 내 존재까지 거짓말같이 느껴졌다. 지금 내가 바라보고 있는건 사실 허구이고, 어쩌면 지금 꿈꾸고 있는건 아닐까. 그저 이 말도 안 나올 정도로 황홀한 순간을 엄마 아빠와 함께 하고 싶은 생각에 잔뜩 흥분한채 얼마 남지 않은 금 같은 데이터를 키고 엄마에게 영상 통화를 걸었다.
+        </p>
 
-  <div class="pc_main_img" style="background-image:url(./images/main_img.jpg); width:100%; height:100%;">&nbsp;
-  </div>
-</div>
-
-<div class="blank_3">&nbsp;</div>
-
-
-<div id="text_box_1">
-  <span>Oth, creates stories by putting inspirations from travel and daily life together, and develops the brand as if the stories may invite to an indirect experience of an exhibition.</span>
-  
-  <span>Oth, produces the products which stimulate five senses; vision, smell, touch, hearing and taste that are based on the photos taken by the director to make various stories to perform coexistance in your spaces,</span>
-
-  <span>and proposes the ways that images and emotions to exist in multi-dimensional forms, not in the form of pictures.</span>
-
-  <span>Pphotography ⓒ 2020 Othcomma</span>
-</div>
-
-<div class="blank_3">&nbsp;</div>
-
-<!-- 상품 row -->
-<div class="product_box_all">
-  <div class="product_box_row">
-    <div class="product_box_each">
-      <a href="#">
-       <img src="./images/product_1.jpg" alt=""> 
-      </a>
-      <div class="hide_text">
-        <a href="#">인센스 스타터팩</a>
       </div>
     </div>
-    <div class="product_box_each">
-      <a href="#">
-       <img src="./images/product_2.jpg" alt=""> 
-      </a>
-      <div class="hide_text">
-        <a href="#">젊은 날의 바다</a>
+
+    <div class="blank_3"></div>
+    <div class="blank_3"></div>
+    <div class="blank_3"></div>
+
+    <div class="bottom_box">
+      <div class="bottom_img">
+        <img src="./images/bottom_img.jpg" alt="" width="100%">
+      </div>
+      <div class="bottom_text">
+        <span>
+          방 안 깊숙이 들어온 빛 덕분에 아침 7시에 절로 눈이 떠졌다. 커튼을 마저 걷어내자 주황빛이 방 전체에 퍼졌다. 저 멀리 파도 소리가 들려온다. 파도가 치고, 해가 지평선 너머로 천천히 올라오고 있는 모습을 보니 갑작스레 눈물이 터졌다.
+        </span>
+        <span>
+          좋지 않은 생각은 여전히 깊은 내면에 숨어 내가 나약해진 틈을 타, 언제든 나올 수 있게 기회를 엿보고 있었는데 애써 그 마음을 꾹꾹 눌렀다. 
+        </span>
+        <span>
+          저 해를 보고, 이 바다를 보고 조금은, 아주 조금은 더 잘 살아보고 싶다는 생각이 들었기 때문이다.
+        </span>
       </div>
     </div>
-    <div class="product_box_each">
-      <a href="#">
-       <img src="./images/product_3.jpg" alt=""> 
-      </a>
-      <div class="hide_text">
-        <a href="#">#4. 나른한 프라하의 카페</a>
+
+    <div class="blank_3"></div>
+    <div class="blank_3"></div>
+
+    <footer>
+      <div class="footer_box">
+        <span>
+          Company Name: 오티에이치콤마(oth,) | Owner: 문예진 | Personal Info Manager: 오티에이치콤마 | Phone Number: 010-4854-8705 | Email: othcomma@gmail.com
+        </span>
+        <span>
+          Address: 서울특별시 서대문구 연희로 25길 4-16 3층 | Business Registration Number: 229-22-66610 | Business License: 2022-서울서대문-0252 | Hosting by sixshop
+        </span>
+        <div class="footer_link">
+          <a href="#">안전구매(에스크로) 서비스 가맹점</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Confirm Entrepreneur Information</a>
+        </div>
       </div>
-    </div>
-    <div class="product_box_each">
-      <a href="#">
-       <img src="./images/product_4.jpg" alt=""> 
-      </a>
-      <div class="hide_text">
-        <a href="#">#3. 찬란한 니스 해변</a>
-      </div>
-    </div>
-    <div class="product_box_each">
-      <a href="#">
-       <img src="./images/product_5.jpg" alt=""> 
-      </a>
-      <div class="hide_text">
-        <a href="#">#2. 베르사유 정원에서 피크닉</a>
-      </div>
-    </div>
+    </footer>
   </div>
-
-  <div class="product_box_row">
-    <div class="product_box_each">
-      <a href="#">
-       <img src="./images/product_6.jpg" alt=""> 
-      </a>
-      <div class="hide_text">
-        <a href="#">THE COMPANION</a>
-      </div>
-    </div>
-    <div class="product_box_each">
-      <a href="#">
-       <img src="./images/product_7.jpg" alt=""> 
-      </a>
-      <div class="hide_text">
-       <a href="#">Han River</a>
-      </div>
-    </div>
-    <div class="product_box_each">
-      <a href="#">
-       <img src="./images/product_8.jpg" alt=""> 
-      </a>
-      <div class="hide_text">
-       <a href="#">Switzerland</a> 
-      </div>
-    </div>
-    <div class="product_box_each">
-      <a href="#">
-       <img src="./images/product_9.jpg" alt=""> 
-      </a>
-      <div class="hide_text">
-        <a href="#">Sunset</a>
-      </div>
-    </div>
-    <div class="product_box_each">
-      <a href="#">
-       <img src="./images/product_10.jpg" alt=""> 
-      </a>
-      <div class="hide_text">
-        <a href="#">Han River Upcycling Bag</a>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<div class="blank_3">&nbsp;</div>
-<div class="blank_3">&nbsp;</div>
-
-<div class="text_box_2">
-  <span>1. HanRiver fabric poster ver.1,2 </span>
-  <span>2. Switzerland fabric poster</span>
-  <span>3. Incense Stick #1.Switzerland in the rain</span>
-  <span>4. Sunset fabric poste</span>
-</div>
-
-<div class="blank_3">&nbsp;</div>
-
-<div class="middle_product_box">
-  <div class="middle_product_box_left">
-    <img src="./images/middle_img.jpg" alt="">
-  </div>
-  <div class="middle_product_box_blank">&nbsp;</div>
-  <div class="middle_product_box_right">
-    <img src="./images/water.jpg" alt="">
-    <p>때때로 훌훌 마음을 털어놓고 싶은 장소가 서울에 있습니다. 바쁜 삶 속에서 하루의 고단함을 잊게 해주는 풍경. 살랑이는 바람과 따뜻한 날씨. 바로 그곳엔 위로가 있습니다. 오티에이치콤마는 직접적인 언어로 질문을 던지는 대신 패브릭 속에 한강의 윤슬을 담아 여러분께 묻습니다. 한강은 당신에게 어떤 의미로 다가가며 또 당신은 이곳에서 무엇을 말하고 싶은지를요.</p>
-  </div>
-</div>
-
-<div class="blank_3">&nbsp;</div>
-<div class="blank_3">&nbsp;</div>
-<div class="blank_3">&nbsp;</div>
-
-<div class="product_box_2_all">
-  <div class="product_box_1">
-    <a href="#">
-     <img src="./images/product_11.jpg" alt="">
-    </a>
-    <p>
-      “더 열심히 놀고, 더 열심히 넓은 세상을 보러 다니렴. 아빠는 살면서 가장 후회되는게 어릴때부터 장사를 시장하고 빨리 결혼해서 가장이 되니 짊어지고 갈 것이 너무 많았기 때문에 더이상 나혼자만 생각할 수 없게 되었어. 내가 하고 싶은 것을 포기해야만 우리 가족이 살 수 있었거든. 그래서 내 자식들은, 너희들은 한 살이라도 더 젊을 때 더 많은 것을 보고 더 넓은 세상을 경험했으면 좋겠어.” 라고 아빠가 말했다.
-    </p>
-  </div>
-
-  <div class="product_box_1">
-    <a href="#">
-      <img src="./images/product_12.jpg" alt="">
-     </a>
-    <p>
-      이탈리아를 떠나 스위스에 도착한 첫째 날, 처음부터 꼬일 때로 꼬인 날이었다. 로마 역에서 사기를 당해 기차를 놓치고 서둘러 달려간 공항에는 예약에 문제가 생겨 하필 비행기 탑승 10분 전에, 목적지까지 걸어서 20분이나 소요되는 거리를 15kg의 배낭을 메고 5분 안으로 뛰어서 도착해야만 했으며, 스위스에 도착해 숨 좀 돌릴 겸 몽퇴르에서 산책을 하다가 갑자기 쏟아진 소나기에 물에 빠진 생쥐 꼴이 되기도 하고 마지막으로 숙소로 향하는 기차를 잘 못 타기까지 했다. 안 좋은 일들은 왜 이렇게 한꺼번에 몰려오는지, 잔뜩 심통이 난 얼굴로 오늘이 내 인생 최악의 날이라고 생각을 하면서 환승하기 위해 스피치 역에서 내려 기차를 기다리다고 있었는데, 바로 역 앞에 있는 바다처럼 넓은 호수에 그림처럼 선명하게 뜬 무지개 하나가 잔뜩 지친 나에게 큰 위로로 다가왔다. 이 무지개를 만나기 위해 이제까지 그런 역경을 이겨낸 걸까. 행복이란 참 이렇게 단순하다. 내게는 가질 수도 없고, 굶주린 배를 채우지도 못하는 그 무지개가 고단한 하루 끝에 받은 귀중한 선물같았다. 
-    </p>
-  </div>
-
-  <div class="product_box_1">
-    <a href="#">
-      <img src="./images/product_13.jpg" alt="">
-     </a>
-    <p>
-      약 530프랑을 지불하고 타고 올라온 케이블카에서 내린 뒤 건물을 벗어나니 눈 앞에 펼쳐진 풍경들도 그렇고, 지금 여기서 숨쉬고 있는 내 존재까지 거짓말같이 느껴졌다. 지금 내가 바라보고 있는건 사실 허구이고, 어쩌면 지금 꿈꾸고 있는건 아닐까. 그저 이 말도 안 나올 정도로 황홀한 순간을 엄마 아빠와 함께 하고 싶은 생각에 잔뜩 흥분한채 얼마 남지 않은 금 같은 데이터를 키고 엄마에게 영상 통화를 걸었다.
-    </p>
-
-  </div>
-</div>
-
-<div class="blank_3"></div>
-<div class="blank_3"></div>
-<div class="blank_3"></div>
-
-<div class="bottom_box">
-  <div class="bottom_img">
-    <img src="./images/bottom_img.jpg" alt="" width="100%">
-  </div>
-  <div class="bottom_text">
-    <span>
-      방 안 깊숙이 들어온 빛 덕분에 아침 7시에 절로 눈이 떠졌다. 커튼을 마저 걷어내자 주황빛이 방 전체에 퍼졌다. 저 멀리 파도 소리가 들려온다. 파도가 치고, 해가 지평선 너머로 천천히 올라오고 있는 모습을 보니 갑작스레 눈물이 터졌다.
-    </span>
-    <span>
-      좋지 않은 생각은 여전히 깊은 내면에 숨어 내가 나약해진 틈을 타, 언제든 나올 수 있게 기회를 엿보고 있었는데 애써 그 마음을 꾹꾹 눌렀다. 
-    </span>
-    <span>
-      저 해를 보고, 이 바다를 보고 조금은, 아주 조금은 더 잘 살아보고 싶다는 생각이 들었기 때문이다.
-    </span>
-  </div>
-</div>
-
-<div class="blank_3"></div>
-<div class="blank_3"></div>
-
-<footer>
-  <div class="footer_box">
-    <span>
-      Company Name: 오티에이치콤마(oth,) | Owner: 문예진 | Personal Info Manager: 오티에이치콤마 | Phone Number: 010-4854-8705 | Email: othcomma@gmail.com
-    </span>
-    <span>
-      Address: 서울특별시 서대문구 연희로 25길 4-16 3층 | Business Registration Number: 229-22-66610 | Business License: 2022-서울서대문-0252 | Hosting by sixshop
-    </span>
-    <div class="footer_link">
-      <a href="#">안전구매(에스크로) 서비스 가맹점</a>
-      <a href="#">Terms of Use</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Confirm Entrepreneur Information</a>
-    </div>
-  </div>
-</footer>
 </body>
 </html>
 
