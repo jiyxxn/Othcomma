@@ -140,7 +140,6 @@
     }
 
 /* 메뉴 호버 효과 */
-
 .menu_bar a:hover, .icon_row i:hover {
   color: #ffffff94;
   transition: all 0.3s;
@@ -194,11 +193,11 @@
   }
 
 .product_box_row {
+  position: relative;
+  clear: both;
   width: 85%;
   height: auto;
   margin: 0 auto;
-  position: relative;
-  clear: both;
   padding: 20px 0px 20px 0px;
 
   display: flex;
@@ -212,6 +211,7 @@
     float: left;
     width: 18.7%;
     /* height: 30%; */
+
   }
 
     .product_box_each > a > img {
@@ -220,52 +220,45 @@
       border-radius: 15px;
       overflow: hidden; /* 모서리 둥글게하고 넘친 부분 가리기 */
       border: solid 1px #70707090;
+      transition: all 0.3s;
     }
 
-    .product_box_each > a {
-      transition: all 0.5s;
-    }
-
-    .product_box_each > a:hover{
-      opacity: 0.3;
-      transition: all 0.5s;
-      color: #262626;
-    }
-
+    
     .hide_text {
-      display: none;
       width: 100%;
       height: 30px;
       line-height: 30px;
-
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: all 0.3s;
     }
 
+    /* 마우스 호버 효과 */
+    .product_box_each:hover .hide_text {
+      opacity: 1;
+    }
+
+    .product_box_each:hover img {
+      opacity: 0.3;
+      transition: all 0.3s;
+    }
+
+
       .hide_text > a {
-        width: 100%;
+        width: 80%;
         height: 30px;
         font-family: 'Noto Sans KR', sans-serif;
+        text-align: center;
         font-size: 0.85rem;
         color: #262626;
+
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
 
 
-    .product_box_each a:hover + .hide_text, .hide_text:hover {
-      display: block;
-      width: 100%;
-      height: 30px;
-      text-align: center;
-      cursor: pointer;
-      transition: all 0.7s;
-      z-index: 999;
-    }
-
-    .hide_text:hover {
-      background-color: #ffffff70;
-    }
 
 
     
