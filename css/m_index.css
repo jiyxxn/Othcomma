@@ -25,15 +25,13 @@
     display: block;
     width: 100%;
     height: auto;
+    overflow: hidden;
   }
 
   header {
     height: 800px;
   }
 
-  body {
-    overflow: hidden;
-  }
 
   .m_top_header {
     position: absolute;
@@ -102,16 +100,16 @@
     }
 
   #m_main_img {
-    width: 100%;
+    position: absolute;
+    width: 100vw;
     z-index: 1;
+    overflow: hidden;
   }
 
     #m_main_img img {
       display: block;
-      position: absolute;  
       top: 0;
       left: 0;
-      overflow: hidden;
     }
 
 #m_text_box_1 {
