@@ -192,6 +192,11 @@
     color: #707070;
   }
 
+.product_box_all {
+  position: relative;
+  clear: both;
+}
+
 .product_box_row {
   position: relative;
   clear: both;
@@ -199,6 +204,7 @@
   height: auto;
   margin: 0 auto;
   padding: 20px 0px 20px 0px;
+  overflow: hidden;
 
   display: flex;
   flex-flow: row nowrap;
@@ -210,12 +216,11 @@
     position: relative;
     float: left;
     width: 18.7%;
-    /* height: 30%; */
-
+    /* height: 400px; */
   }
 
     .product_box_each > a > img {
-      max-width: 100%; /* 가로세로 비율 고정*/
+      max-width: 100%; /*가로세로 비율 고정*/
       height: 100%;
       border-radius: 15px;
       overflow: hidden; /* 모서리 둥글게하고 넘친 부분 가리기 */
